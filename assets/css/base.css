@@ -1,0 +1,271 @@
+/* Copyright © 2024 Nguyễn Ngọc Huy Hoàng. All rights reserved.*/
+
+:root {
+    --primary-bg-color: #001a57;
+    --white-color: #fff;
+    --heading-color: #143882;
+    --text-color: #333333;
+    --subtitle-color: #343434;
+    --height-header: 72px;
+    --background-linear: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+p,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+.display-on-mobile {
+    display: none;
+}
+
+.highlight {
+    font-weight: 500;
+    color: #007bff;
+}
+
+.white-text {
+    color: var(--white-color) !important;
+}
+.gray-text {
+    color: #ccc !important;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.special-text {
+    background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+    -webkit-background-clip: text;
+    color: transparent !important;
+}
+
+.btn {
+    border-radius: 3px;
+    padding: 0 12px;
+    height: 36px;
+    min-width: 124px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn:focus {
+    box-shadow: unset;
+}
+
+.btn.btn-special {
+    background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border: 1px solid #ff4495;
+}
+
+.btn.btn-special:hover {
+    background: linear-gradient(to right, #ff4495 0%, #ff6d6d 100%);
+    color: var(--white-color);
+}
+
+.btn.btn-primary {
+    background-color: var(--white-color);
+    color: var(--primary-bg-color);
+    border: 1px solid var(--primary-bg-color);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--primary-bg-color);
+    color: var(--white-color);
+}
+
+.btn.btn-primary--reverse {
+    background-color: var(--primary-bg-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-bg-color);
+}
+.btn.btn-primary--reverse:hover {
+    opacity: 0.7;
+}
+.btn.btn-primary--reverse:active {
+    color: var(--white-color);
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--primary-bg-color);
+
+}
+
+
+.btn.btn--small {
+    min-width: 90px;
+    height: 28px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+
+}
+
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.underline-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: var(--white-color);
+    width: 0px;
+    transition: all 0.4s ease-out;
+}
+
+.underline-link:hover::after {
+    width: 100%;
+
+}
+
+/* Scroll to top */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 85px;
+    border: 1px solid #999;
+    border-radius: 50px 50px 5px 5px;
+    width: 45px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+.back-to-top__icon {
+    width: 22px;
+}
+
+.back-to-top__icon path {
+    fill: #999;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-bg-color);
+    border: none;
+}
+
+.back-to-top:hover .back-to-top__icon path {
+    fill: var(--white-color);
+}
+
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body {
+    position: relative;
+    width: 460px;
+    max-width: 100%;
+    background-color: var(--white-color);
+}
+
+.modal-body-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 440px;
+    max-width: calc(100% - 16px);
+    background-color: var(--white-color);
+}
+
+.modal-body__cancel-icon-svg {
+    width: 26px;
+}
+
+@keyframes openModalBodyRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeModalBodyRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.modal-body-right.closeModalBodyRight {
+    animation: closeModalBodyRight 0.3s ease-out;
+}
+
+.modal-body-right.openModalBodyRight {
+    animation: openModalBodyRight 0.3s ease-in-out;
+}

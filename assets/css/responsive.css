@@ -1,0 +1,288 @@
+/* Copyright © 2024 Nguyễn Ngọc Huy Hoàng. All rights reserved.*/
+
+@media (max-width: 1199.98px) { 
+    .banner {
+        height: unset;
+        padding-top: 65%;
+    }
+    .scroll-down-btn {
+        display: none;
+    }
+    .countdown-number {
+        font-size: 6.4rem;
+    }
+}
+
+/* Mobile + Tablet */
+@media (max-width: 991.98px) {
+    .btn {
+        height: 42px;
+    }
+    .btn.btn--small {
+        height: 36px;
+    }
+    .header-list-wrap {
+        /* display: none; */
+    }
+    .header-list {
+        display: none;
+    }
+
+    
+    
+
+
+    
+    .top-event__item-btn {
+        width: 100%;
+
+    }
+
+    .current-event {
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--white-color);
+    }
+    .next-event {
+        margin-top: 24px;
+    }
+
+    .input-wrap {
+        margin-top: 24px;
+    }
+    
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-menu__logo {
+        height: 60px;
+    }
+    .top-event h2 {
+        font-size: 1.2rem;
+    }
+    .top-event__title {
+        margin-top: 8px;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    :root {
+        --height-header: 60px;
+    }
+    .back-to-top {
+        right: 16px;
+    }
+    .display-on-mobile {
+        display: block;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+    .container.section {
+        padding: 48px 10px;
+    }
+    .container.overview {
+        padding: 30px 10px 48px;
+    }
+
+    .header__logo, .header-menu__logo {
+        height: 48px;
+    }
+    
+
+
+    .top-event h2 {
+        font-size: 1.1rem;
+    }
+    .top-event__title {
+        margin-top: 8px;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    .top-event__location svg {
+        width: 18px;
+    }
+    .top-event__location {
+        font-size: 1.4rem;
+    }
+    .countdown-desc {
+        font-size: 1.3rem;
+    }
+    .countdown-number {
+        font-size: 4rem;
+    }
+
+    /* over view */
+    .overview-item {
+        flex-direction: column;
+        padding: 12px;
+        box-shadow: 0 0 6px 0px #ccc;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        height: unset;
+        align-items: center;
+        background-color: var(--white-color);
+    }
+    .overview-icon-img {
+        height: 70px;
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+    .overview-title {
+        text-align: center;
+    }
+
+    /* Timeline */
+    .timeline-progress {
+        left: 6px;
+    }
+    .timeline-item {
+        width: 100%;
+        grid-template-columns: 48px 1fr;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .timeline-left,
+    .timeline-right {
+        grid-column: 2/3;
+    }
+
+    .timeline-center {
+        justify-content: flex-start;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .timeline-date-text {
+        font-size: 3.2rem;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    .timeline-text {
+        font-size: 2rem;
+    }
+    .timeline-end-text {
+        text-align: justify;
+    }
+
+    
+
+
+
+    /* Event item */
+    .event-item-img {
+        width: 72px;
+        height: 72px;
+    }
+    .event-item__button {
+        flex-wrap: wrap;
+    }
+    .event-item__btn {
+        width: 100%;
+        margin-left: unset;
+        margin-top: 6px;
+    }
+
+
+
+    /* News*/
+    .news-item-wrap {
+        flex-wrap: nowrap;
+        transition: all 0.5s ease;
+    }
+    .news-item__link {
+        --line-height: 2.6rem;
+    }
+
+    .news-list-item {
+        margin-bottom: 10px;
+    }
+
+
+    .news-list-item__date {
+        font-size: 1.2rem;
+    }
+
+
+    /* Newsletter  */ 
+    .newsletter-signup {
+        padding: 60px 12px;
+    }
+    .newsletter-label {
+        font-size: 2.8rem;
+    }
+    
+    .input-wrap {
+        margin-top: 64px;
+        flex-wrap: wrap;
+        background-color: unset;
+        border: none;
+    }
+    .subscribe-input {
+        border: 1px solid var(--white-color)
+    }
+
+    .subscribe-button {
+        margin: 6px auto 0;
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    /* footer */
+    .footer-logo {
+        margin-bottom: unset;
+    }
+    .footer-section {
+        margin-top: 16px;
+    }
+
+    .footer-link, .footer-text {
+        margin-bottom: 6px;
+    }
+
+    .footer-list > .footer-item:last-child > .footer-link,
+    .footer-list > .footer-item:last-child > .footer-text {
+        margin-bottom: unset;
+    }
+
+}
+
+
+/* Small mobile */
+@media (max-width: 575.98px) { 
+    .industry-item {
+        flex-direction: row;
+        margin-bottom: 24px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+        padding: 12px 0;
+        display: flex;
+        align-self: center;
+    }
+    .industry-item-number {
+        padding-right: 24px;
+        padding-left: 24px;
+        margin-right: 16px;
+        border-right: 3px solid var(--heading-color);
+    }
+
+    .industry-item h2 {
+        display: block;
+        border-top: unset;
+        padding-top: unset;
+    }
+
+    .industry-item ul {
+        margin-top: 4px;
+    }
+    .industry-item ul li {
+        padding: unset;
+    }
+}
+
