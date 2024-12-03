@@ -1,0 +1,683 @@
+<!-- Copyright © 2024 Nguyễn Ngọc Huy Hoàng. All rights reserved.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa Công nghệ thông tin, trường Đại học Khoa học, Đại học Huế</title>
+    <link rel="shortcut icon" href="assets/images/Logo_Official_Resize.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="preload" as="image" href="assets/images/banner30y.webp">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="back-to-top">
+            <svg viewBox="0 0 24 24" class="back-to-top__icon">
+                <g>
+                    <path fill="#000000" fill-rule="evenodd"
+                        d="M11.47 6.47a.75.75 0 0 1 1.06 0l8 8a.75.75 0 1 1-1.06 1.06L12 8.06l-7.47 7.47a.75.75 0 0 1-1.06-1.06z"
+                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                </g>
+            </svg>
+        </div>
+
+        <div class="header">
+            <div class="container header-wrap">
+                <div>
+                    <img src="assets/images/Logo_Full_2_Resize.png" class="header__logo" alt="">
+                </div>
+
+                <div class="header-list-wrap">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="#overview" class="header-link underline-link">Giới thiệu</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#milestone" class="header-link underline-link">Các mốc lịch sử</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#event" class="header-link underline-link">Hoạt động kỷ niệm</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#news" class="header-link underline-link">Tin tức & thông báo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <tablet -->
+
+                <div class="header-menu d-block d-lg-none">
+                    <svg viewBox="0 0 512 512" class="header-menu-btn">
+                        <g>
+                            <path
+                                d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"
+                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- active -->
+                <div class="modal ">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-body-right header-menu-wrap">
+                        <div class="header-menu-top">
+                            <div>
+                                <img src="assets/images/Logo_Full_1_Resize.png" class="header-menu__logo" alt="">
+                            </div>
+                            <div class="modal-body__cancel header-menu__cancel modal-body-right__cancel">
+                                <svg viewBox="0 0 64 64" class="modal-body__cancel-icon-svg">
+                                    <g>
+                                        <path
+                                            d="M4.59 59.41a2 2 0 0 0 2.83 0L32 34.83l24.59 24.58a2 2 0 0 0 2.83-2.83L34.83 32 59.41 7.41a2 2 0 0 0-2.83-2.83L32 29.17 7.41 4.59a2 2 0 0 0-2.82 2.82L29.17 32 4.59 56.59a2 2 0 0 0 0 2.82z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <ul class="header-menu-list">
+                            <li class="header-menu-item">
+                                <a href="#overview" class="header-menu-link">
+                                    <svg viewBox="0 0 511.998 511.998" class="">
+                                        <g>
+                                            <path
+                                                d="M261.311 147.274c20.836 0 37.786-16.951 37.786-37.785s-16.951-37.786-37.786-37.786-37.785 16.951-37.785 37.786c0 20.834 16.951 37.785 37.785 37.785zm0-60.572c12.565 0 22.786 10.222 22.786 22.786 0 12.564-10.223 22.786-22.786 22.786s-22.786-10.222-22.786-22.786c.001-12.564 10.221-22.786 22.786-22.786z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                            <path
+                                                d="M118.889 434.02c-28.992-21.357-52.996-49.52-69.417-81.444C32.51 319.6 23.683 282.534 23.946 245.385c.435-61.632 24.765-119.506 68.51-162.962C136.221 38.946 194.3 15.002 255.992 15c36.395-.001 71.346 8.374 103.886 24.89a7.5 7.5 0 0 0 6.789-13.375C332.005 8.92 294.768-.001 255.992 0c-65.68.002-127.513 25.494-174.108 71.781C35.313 118.045 9.41 179.661 8.947 245.28c-.279 39.562 9.122 79.037 27.186 114.158 17.475 33.971 43.015 63.938 73.859 86.66a7.468 7.468 0 0 0 4.442 1.462 7.5 7.5 0 0 0 4.455-13.54zM446.258 404.663c36.419-43.917 56.591-99.564 56.798-156.691.288-79.447-38.595-154.882-104.013-201.786a7.5 7.5 0 0 0-8.74 12.19c61.48 44.081 98.023 114.938 97.753 189.54-.194 53.658-19.14 105.924-53.344 147.17-9.26 11.164-15.515 24.315-18.089 38.033-2.041 10.877-4.137 27.268 1.208 43.965 1.752 5.476.401 11.21-3.612 15.338-3.912 4.024-9.443 5.501-14.798 3.951-15.415-4.461-31.14-11.213-45.478-19.528-11.866-6.881-25.793-8.743-39.221-5.237-19.867 5.186-40.455 7.702-61.154 7.495-36.964-.379-72.262-9.275-104.913-26.44a7.5 7.5 0 0 0-6.981 13.277c34.778 18.284 72.372 27.758 111.739 28.162 22.057.216 43.944-2.458 65.098-7.98 9.573-2.499 19.485-1.185 27.907 3.699 15.377 8.918 32.262 16.166 48.832 20.961a30.445 30.445 0 0 0 8.474 1.216c7.895-.001 15.463-3.169 21.249-9.12a30.251 30.251 0 0 0 7.143-30.366c-3.324-10.385-3.556-21.681-.751-36.625 2.106-11.218 7.255-22.015 14.893-31.224z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                            <path
+                                                d="M183.8 361.716v7.528c0 14.331 11.659 25.99 25.989 25.99h103.043c14.332 0 25.99-11.66 25.99-25.99v-7.528c0-14.332-11.659-25.99-25.99-25.99h-13.736v-144.05a25.5 25.5 0 0 0-11.48-21.335 25.491 25.491 0 0 0-24.127-2.171 113.356 113.356 0 0 1-39.056 9.011l-23.64 1.173c-9.529.473-16.994 8.318-16.994 17.859V211c0 9.86 8.021 17.881 17.881 17.881h20.743c.608 0 1.103.495 1.103 1.103v105.744h-13.737v-.001c-14.33-.001-25.989 11.658-25.989 25.989zm47.225-10.991a7.5 7.5 0 0 0 7.5-7.5V229.982c.001-8.879-7.223-16.102-16.102-16.102H201.68a2.884 2.884 0 0 1-2.881-2.881v-14.787a2.879 2.879 0 0 1 2.738-2.878l23.639-1.173a128.316 128.316 0 0 0 44.207-10.199c3.32-1.42 6.954-1.093 9.969.897 3.015 1.99 4.744 5.203 4.744 8.816v151.55a7.5 7.5 0 0 0 7.5 7.5h21.236c6.06 0 10.991 4.93 10.991 10.991v7.528c0 6.06-4.931 10.991-10.991 10.991H209.789c-6.059 0-10.99-4.931-10.99-10.991v-7.528c0-6.061 4.931-10.991 10.99-10.991h21.236z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#milestone" class="header-menu-link">
+                                    <svg viewBox="0 0 50 50" class="">
+                                        <g transform="matrix(1,0,0,1,5,0)">
+                                            <path
+                                                d="m35.5 19 5.54-8.31c.26-.38.28-.88.06-1.28-.22-.41-.64-.66-1.1-.66H25.12c-.58-2.85-3.11-5-6.12-5H8.25V2a1.25 1.25 0 0 0-2.5 0v44.75H2a1.25 1.25 0 0 0 0 2.5h10a1.25 1.25 0 0 0 0-2.5H8.25v-22.5h14.63c.58 2.85 3.11 5 6.12 5h11a1.25 1.25 0 0 0 1.04-1.94zM8.25 6.25H19c2.07 0 3.75 1.68 3.75 3.75v11.75H8.25zM29 26.75c-2.07 0-3.75-1.68-3.75-3.75V11.25h12.41l-4.7 7.06c-.28.42-.28.97 0 1.39l4.7 7.06H29z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    Cột mốc lịch sử</a>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#event" class="header-menu-link">
+                                    <svg viewBox="0 0 512.225 512.225" class="no-fill">
+                                        <g transform="matrix(1,0,0,1,0,0)">
+                                            <path
+                                                d="M375.931 504.457h67.639V383.55H68.357v120.907h292.574M158.516 35.614l-11.863-10.71 10.71-11.863c5.915-6.552 16.021-7.068 22.573-1.153 6.552 5.915 7.068 16.021 1.153 22.573-5.915 6.551-16.021 7.068-22.573 1.153zM443.57 398.521h55.978l-24.617 45.06 24.617 44.813H443.57"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                            <path
+                                                d="M69.303 398.521H13.325l24.617 45.06-24.617 44.813h55.978M115.105 48.273a202.866 202.866 0 0 1 34.47-23.572M63.394 114.005a211.445 211.445 0 0 1 22.691-35.647M40.951 196.195a216.617 216.617 0 0 1 7.076-42.105M52.533 282.956a215.189 215.189 0 0 1-10.095-42.051M126.941 383.554c-23.642-17.198-43.583-39.487-58.339-65.331"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                            <path
+                                                d="m41.282 198.478-8.176-8.176c-5.858-5.858-15.355-5.858-21.213 0-5.858 5.858-5.858 15.355 0 21.213l29.389 29.389 29.494-29.494c5.858-5.858 5.858-15.355 0-21.213-5.858-5.858-15.355-5.858-21.213 0l-8.281 8.281zM52.06 284.304l-10.903-3.847c-7.812-2.757-16.38 1.342-19.137 9.154-2.757 7.812 1.342 16.38 9.154 19.137l39.194 13.83 13.88-39.334c2.757-7.812-1.342-16.38-9.154-19.137-7.812-2.757-16.38 1.342-19.137 9.154l-3.897 11.043zM123.288 383.554v-41.711c0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15v11.711M61.887 117.071l-4.891-10.477c-3.504-7.507-12.43-10.751-19.937-7.247-7.507 3.504-10.751 12.43-7.247 19.937l17.581 37.661 37.795-17.644c7.507-3.504 10.751-12.43 7.247-19.937-3.504-7.507-12.43-10.751-19.937-7.247l-10.611 4.954zM112.858 51.263V39.7c0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15v41.562h41.711c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15l-11.711.001zM353.344 35.614l11.863-10.71-10.71-11.863c-5.915-6.552-16.021-7.068-22.573-1.153-6.552 5.915-7.068 16.021-1.153 22.573 5.915 6.551 16.021 7.068 22.573 1.153z"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                            <path
+                                                d="M396.755 48.273a202.866 202.866 0 0 0-34.47-23.572M448.465 114.005a211.445 211.445 0 0 0-22.691-35.647M470.908 196.195a216.617 216.617 0 0 0-7.076-42.105M459.327 282.956a215.323 215.323 0 0 0 10.316-43.719M384.918 383.554c23.642-17.198 43.583-39.487 58.339-65.331"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                            <path
+                                                d="m470.577 198.478 8.176-8.176c5.858-5.858 15.355-5.858 21.213 0 5.858 5.858 5.858 15.355 0 21.213l-29.389 29.389-29.494-29.494c-5.858-5.858-5.858-15.355 0-21.213 5.858-5.858 15.355-5.858 21.213 0l8.281 8.281zM459.799 284.304l10.903-3.847c7.812-2.757 16.38 1.342 19.137 9.154 2.757 7.812-1.342 16.38-9.154 19.137l-39.194 13.83-13.88-39.334c-2.757-7.812 1.342-16.38 9.154-19.137 7.812-2.757 16.38 1.342 19.137 9.154l3.897 11.043zM388.572 383.554v-41.711c0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15v11.711M449.973 117.071l4.891-10.477c3.504-7.507 12.43-10.751 19.937-7.247 7.507 3.504 10.751 12.43 7.247 19.937l-17.581 37.661-37.795-17.644c-7.507-3.504-10.751-12.43-7.247-19.937 3.504-7.507 12.43-10.751 19.937-7.247l10.611 4.954zM399.002 51.263V39.7c0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15v41.562h-41.711c-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15l11.711.001zM270.931 286.135v60.089M300.963 286.135v60.089M270.931 316.136h30.032M203.447 293.479h45M225.958 293.479v52.656M106.175 405.83l22.499 30 22.501-30M128.674 435.83v44.92M218.674 413.691h-37.511v59.937h37.511M181.163 443.66h22.511M241.174 481.074v-44.883c0-12.426 10.074-22.5 22.5-22.5s22.5 10.074 22.5 22.5v44.883M241.174 458.731h45M316.494 481.085v-67.404h15.277c8.276 0 14.984 6.709 14.984 14.985s-6.709 14.984-14.984 14.984h-15.277M323.261 443.65l28.341 32.553M413.688 413.663h-22.475c-8.217 0-14.879 6.674-14.879 14.908 0 8.228 6.653 14.9 14.864 14.908l.138.007c8.212.008 14.864 6.68 14.864 14.908v.218c0 8.207-6.621 14.871-14.812 14.908l-22.715.136M315.809 263.578c-24.853 0-45-20.147-45-45v-60c0-24.853 20.147-45 45-45s45 20.147 45 45v60c0 24.853-20.147 45-45 45z"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                            <path
+                                                d="M315.809 233.578c-8.284 0-15-6.716-15-15v-60c0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15v60c0 8.284-6.716 15-15 15zM241.054 158.578c0-24.853-20.147-45-45-45h-45.001v30h45.001c8.284 0 15 6.716 15 15s-6.716 15-15 15h-15.001v30h15.001c8.284 0 15 6.716 15 15s-6.716 15-15 15h-45.001v30h45.001c24.853 0 45-20.147 45-45 0-11.528-4.34-22.038-11.468-30 7.128-7.962 11.468-18.472 11.468-30z"
+                                                style="stroke-width: 15; stroke-miterlimit: 10;" fill="none"
+                                                stroke="#333333" stroke-width="15" stroke-miterlimit="10"
+                                                data-original="#000000" opacity="1" class=""></path>
+                                        </g>
+                                    </svg>
+                                    Hoạt động kỷ niệm</a>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#news" class="header-menu-link">
+                                    <svg viewBox="0 0 60 60" class="">
+                                        <g>
+                                            <path
+                                                d="M55 0H27a5.006 5.006 0 0 0-5 5v24a4.993 4.993 0 0 0 1.052 3.053A17.2 17.2 0 0 1 15 34H8a8 8 0 0 0-.691 15.965l3.26 8.15A2.986 2.986 0 0 0 13.354 60H16a3 3 0 0 0 2.786-4.114l-2.329-5.822a17.535 17.535 0 0 1 11.073 5.175 2.566 2.566 0 0 0 1.82.761 2.661 2.661 0 0 0 1.021-.207A2.635 2.635 0 0 0 32 53.357V46.9a5 5 0 0 0 0-9.8V34h7v6.77a2.2 2.2 0 0 0 1.317 2.03 2.243 2.243 0 0 0 .914.2 2.22 2.22 0 0 0 1.492-.582L51.977 34H55a5.006 5.006 0 0 0 5-5V5a5.006 5.006 0 0 0-5-5ZM2 42a6.006 6.006 0 0 1 6-6h6v12H8a6.006 6.006 0 0 1-6-6Zm14.926 14.628A1 1 0 0 1 16 58h-2.646a1 1 0 0 1-.928-.628L9.477 50h4.8ZM30 53.357a.631.631 0 0 1-.4.592.584.584 0 0 1-.662-.128A19.48 19.48 0 0 0 16 48.029V35.971a19.48 19.48 0 0 0 12.941-5.792.585.585 0 0 1 .662-.128.631.631 0 0 1 .4.592ZM34 42a3 3 0 0 1-2 2.816v-5.632A3 3 0 0 1 34 42Zm24-13a3 3 0 0 1-3 3h-3.41a1 1 0 0 0-.673.261l-9.535 8.675a.216.216 0 0 1-.251.041.209.209 0 0 1-.131-.207V33a1 1 0 0 0-1-1h-8v-1.357a2.635 2.635 0 0 0-1.629-2.443 2.572 2.572 0 0 0-2.841.557 18.931 18.931 0 0 1-2.737 2.258A2.989 2.989 0 0 1 24 29V5a3 3 0 0 1 3-3h28a3 3 0 0 1 3 3Z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                            <path
+                                                d="M29 9h13a1 1 0 0 0 0-2H29a1 1 0 0 0 0 2ZM53 14H29a1 1 0 0 0 0 2h24a1 1 0 0 0 0-2ZM53 19H37a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2ZM29 21h4a1 1 0 0 0 0-2h-4a1 1 0 0 0 0 2ZM49 24H29a1 1 0 0 0 0 2h20a1 1 0 0 0 0-2Z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    Tin tức & thông báo</a>
+                            </li>
+                        </ul>
+
+                        <div class="header-menu-footer">
+                            <h2> Khoa Công nghệ Thông tin - Trường Đại học Khoa học, Đại học Huế.</h2>
+                            <ul>
+                                <li>
+                                    Địa chỉ: Tầng 2 Nhà G, 77 Nguyễn Huệ, TP. Huế
+                                </li>
+                                <li>
+                                    Số điện thoại:
+                                    <a href="tel:02343826767" target="_blank">
+                                        <span> 0234 382 6767</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    Email:
+                                    <a href="mailto:khoacntt@husc.edu.vn" target="_blank">
+                                        <span> khoacntt@husc.edu.vn</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="banner">
+            <div id="particles-js" data-aos="zoom-in"></div>
+            <a href="#js-top-event" class="scroll-down-btn"><span></span>Cuộn để xem thêm</a>
+        </div>
+
+
+        <div class="content">
+            <div class="top-event" id="js-top-event">
+                <!-- js -->
+            </div>
+
+
+            <div id="overview">
+                <div class="container section">
+                    <div class="section-heading-small text-muted">Giới thiệu</div>
+                    <div class="section-heading special-text text-start">Khoa Công nghệ thông tin</div>
+
+                    <div class="row gx-md-5 overview-box">
+                        <div class="col-12 col-md-12 col-lg-12 ">
+                            <div class="overview-item" data-aos="fade-up">
+                                <img loading="lazy" src="assets/images/ThanhLap_Icon.png" alt=""
+                                    class="overview-icon-img d-block d-md-none">
+                                <div>
+                                    <div class="overview-title">Lịch sử thành lập</div>
+                                    <div class="overview-content">
+                                        Ngày 13/12/1994 Bộ Giáo dục và Đào tạo ký quyết định thành
+                                        lập
+                                        khoa Công
+                                        nghệ Thông tin (CNTT) thuộc trường Đại học Khoa học - Đại học Huế, một trong sáu
+                                        khoa CNTT
+                                        trọng
+                                        điểm trên toàn quốc. Tuy nhiên, khoa CNTT chính thức hoạt động từ ngày
+                                        01/06/1995
+                                        với 6
+                                        thành
+                                        viên
+                                        chuyển từ Bộ môn Toán Ứng dụng của Khoa Toán – Cơ – Tin học.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="overview-item" data-aos="fade-up">
+                                <img loading="lazy" src="assets/images/DoiNguGiangVien_Icon.png" alt=""
+                                    class="overview-icon-img d-block d-md-none">
+                                <div class="d-flex flex-column" style="max-width: 100%;">
+                                    <div class="overview-title">Đội ngũ giảng viên</div>
+
+                                    <div class="overview-content">
+                                        Với sự phát triển không ngừng về đội ngũ, quy mô đào tạo và nghiên cứu khoa học
+                                        (NCKH), hiện nay (năm 2023) khoa có 26 viên chức và người lao động, trong đó
+                                        <span class="highlight">23 giảng viên</span> với 06 phó giáo sư tiến sĩ, 9 tiến
+                                        sĩ,
+                                        10 thạc sĩ
+                                        <span class="highlight">02 trợ giảng</span> và
+                                        <span class="highlight">01 văn thư</span>.
+                                    </div>
+                                    <a class="overview-item__img" href="assets/images/giangVienKhoaCntt2023.jpg"
+                                        data-lightbox="overview-item__img">
+                                        <img loading="lazy" class="" src="assets/images/giangVienKhoaCntt2023.jpg"
+                                            alt="">
+                                    </a>
+                                    <p>Các thành viên trong khoa CNTT năm 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry">
+                    <div class="container section">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="industry-item" data-aos="fade-up">
+                                    <div class="industry-item-number flex-shrink-0">3</div>
+                                    <div class="flex-grow-1 ">
+                                        <h2>Bộ môn</h2>
+                                        <ul>
+                                            <li>Khoa học máy tính</li>
+                                            <li>Công nghệ phần mềm</li>
+                                            <li>Mạng máy tính</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="industry-item" data-aos="fade-up">
+                                    <div class="industry-item-number flex-shrink-0">2</div>
+                                    <div class="flex-grow-1 ">
+                                        <h2>Ngành đào tạo đại học</h2>
+                                        <ul>
+                                            <li>Công nghệ thông tin</li>
+                                            <li>Kỹ thuật phần mềm</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="industry-item" data-aos="fade-up">
+                                    <div class="industry-item-number flex-shrink-0">2</div>
+                                    <div class="flex-grow-1 ">
+                                        <h2>Ngành đào tạo thạc sĩ</h2>
+                                        <ul>
+                                            <li>Khoa học máy tính</li>
+                                            <li>Quản lí công nghệ thông tin</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="industry-item" data-aos="fade-up">
+                                    <div class="industry-item-number flex-shrink-0">1</div>
+                                    <div class="flex-grow-1 ">
+                                        <h2>Ngành đào tạo tiến sĩ</h2>
+                                        <ul>
+                                            <li>Khoa học máy tính</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="timeline" id="milestone">
+                <div class="section container timeline-overlay">
+                    <div class="section-heading white-text text-center">
+                        Các mốc lịch sử
+                    </div>
+                    <p class="section-subtitle timeline-subtitle">Điểm lại các dấu mốc quan trọng trong chặng đường 30
+                        xây dựng & phát triển khoa</p>
+                </div>
+
+                <div class="container">
+                    <div id="js-timeline" class="timeline-component">
+                        <!-- js -->
+                    </div>
+                </div>
+                <div class="container section timeline-overlay">
+                    <div class="section-heading timeline-end-heading white-text">
+                        Hiện nay
+                    </div>
+                    <div class="section-text timeline-end-text white-text">
+                        Với bề dày 30 năm xây dựng và phát triển, khoa đã đào tạo được số lượng lớn các cử nhân, thạc
+                        sĩ, tiến sĩ đang công tác trên mọi miền tổ quốc và thế giới, hướng tới đóng góp cho sự phát
+                        triển của đất nước và hội nhập quốc tế tích cực, sâu rộng.
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="event">
+                <div class="container section">
+                    <div class="section-heading special-text text-center">
+                        Hoạt động kỷ niệm
+                    </div>
+                    <p class="section-subtitle">Chương trình hoạt động hướng tới kỷ niệm 30 năm thành lập khoa</p>
+                    <div
+                        class="row gx-md-5 flex-column-reverse flex-md-column-reverse flex-lg-row event-box justify-content-center" data-aos="fade-up">
+                        <div class="col-12 col-lg-12">
+                            <div class="event-list-wrap">
+                                <div class="event-heading">
+                                    <svg viewBox="0 0 512 512" class="event-heading__svg">
+                                        <g>
+                                            <path fill="#ffffff"
+                                                d="M496.607 97.704v353.628c0 15.107-12.247 27.354-27.354 27.354H42.745c-15.107 0-27.354-12.247-27.354-27.354V97.704c0-15.107 12.247-27.354 27.354-27.354h426.509c15.106 0 27.353 12.247 27.353 27.354z"
+                                                opacity="1" data-original="#ffffff" class=""></path>
+                                            <path fill="#143882"
+                                                d="M496.607 167.627V97.704c0-15.107-12.247-27.354-27.354-27.354H42.744c-15.107 0-27.354 12.247-27.354 27.354v69.923z"
+                                                opacity="1" data-original="#f6b239" class=""></path>
+                                            <path fill="#143882"
+                                                d="M496.607 97.698v69.921h-47.929V97.698c0-15.11-12.223-27.333-27.333-27.333h47.929c15.11 0 27.333 12.223 27.333 27.333z"
+                                                opacity="1" data-original="#f9f4f4" class=""></path>
+                                            <path fill="#143882"
+                                                d="M294.161 220.104v37.032a8.731 8.731 0 0 1-8.731 8.731h-58.864a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.73 8.73 0 0 1 8.731 8.731z"
+                                                opacity="1" data-original="#f6b239" class=""></path>
+                                            <g fill="#cfd1d0">
+                                                <path
+                                                    d="M415.058 220.104v37.032a8.731 8.731 0 0 1-8.731 8.731h-58.864a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.731 8.731 0 0 1 8.731 8.731zM173.265 305.326v37.032a8.731 8.731 0 0 1-8.731 8.731H105.67a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.732 8.732 0 0 1 8.731 8.731zM294.161 305.326v37.032a8.731 8.731 0 0 1-8.731 8.731h-58.864a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.731 8.731 0 0 1 8.731 8.731zM415.058 305.326v37.032a8.731 8.731 0 0 1-8.731 8.731h-58.864a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.732 8.732 0 0 1 8.731 8.731zM173.265 390.549v37.032a8.731 8.731 0 0 1-8.731 8.731H105.67a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.731 8.731 0 0 1 8.731 8.731z"
+                                                    fill="#cfd1d0" opacity="1" data-original="#cfd1d0" class=""></path>
+                                            </g>
+                                            <path fill="#143882"
+                                                d="M294.161 390.549v37.032a8.731 8.731 0 0 1-8.731 8.731h-58.864a8.731 8.731 0 0 1-8.731-8.731v-37.032a8.731 8.731 0 0 1 8.731-8.731h58.864a8.73 8.73 0 0 1 8.731 8.731z"
+                                                opacity="1" data-original="#f6b239" class=""></path>
+                                            <g fill="#fff">
+                                                <path
+                                                    d="M421.345 107.37c0 10.298-8.325 18.671-18.623 18.671s-18.623-8.373-18.623-18.671 8.325-18.623 18.623-18.623 18.623 8.325 18.623 18.623zM271.074 107.37c0 10.298-8.325 18.671-18.623 18.671s-18.623-8.373-18.623-18.671 8.325-18.623 18.623-18.623 18.623 8.325 18.623 18.623zM120.803 107.37c0 10.298-8.325 18.671-18.623 18.671s-18.623-8.373-18.623-18.671 8.325-18.623 18.623-18.623 18.623 8.325 18.623 18.623z"
+                                                    fill="#ffffff" opacity="1" data-original="#ffffff" class=""></path>
+                                            </g>
+                                            <path
+                                                d="M469.254 64.333h-20.389c-2.95-20.896-20.899-37.036-42.597-37.036s-39.647 16.14-42.597 37.036h-65.074c-2.95-20.896-20.899-37.036-42.597-37.036s-39.65 16.141-42.6 37.036h-65.075c-2.95-20.896-20.901-37.036-42.599-37.036-21.696 0-39.646 16.14-42.596 37.036H42.746c-18.361 0-33.37 14.929-33.37 33.37v353.628c0 18.398 14.97 33.37 33.37 33.37h426.509c18.403 0 33.37-14.972 33.37-33.37V97.703c0-18.421-14.987-33.37-33.371-33.37zm-62.985-25.005c15.05 0 27.623 10.77 30.44 25.005h-60.88c2.817-14.235 15.39-25.005 30.44-25.005zm-150.268 0c15.05 0 27.623 10.77 30.44 25.005h-60.885c2.818-14.235 15.391-25.005 30.445-25.005zm-150.274 0c15.052 0 27.625 10.77 30.443 25.005H75.286c2.818-14.235 15.391-25.005 30.441-25.005zM42.746 76.364h93.428c-1.558 7.906-6.141 14.724-12.483 19.24-4.192-7.629-12.209-12.873-21.512-12.873-13.584 0-24.636 11.053-24.636 24.639 0 13.614 11.053 24.686 24.636 24.686 13.412 0 24.31-10.803 24.587-24.177 11.466-6.445 19.662-17.977 21.564-31.515h138.116c-1.558 7.907-6.142 14.726-12.484 19.242-4.192-7.631-12.21-12.875-21.513-12.875-13.581 0-24.634 11.053-24.634 24.639 0 13.614 11.053 24.686 24.634 24.686 13.411 0 24.308-10.802 24.587-24.175 11.468-6.445 19.665-17.978 21.567-31.518h138.111c-1.558 7.906-6.14 14.723-12.481 19.239-4.192-7.629-12.209-12.872-21.512-12.872-13.586 0-24.639 11.053-24.639 24.639 0 13.614 11.053 24.686 24.639 24.686 13.412 0 24.31-10.803 24.587-24.178 11.465-6.446 19.66-17.977 21.562-31.515h20.384c11.767 0 21.34 9.573 21.34 21.34v63.907H21.406V97.704c0-11.768 9.572-21.34 21.34-21.34zm62.981 37.036c2.693 0 5.319-.28 7.877-.754-2 4.343-6.353 7.38-11.425 7.38-6.95 0-12.606-5.677-12.606-12.655 0-6.95 5.656-12.608 12.606-12.608 4.432 0 8.319 2.311 10.568 5.778-2.26.525-4.602.829-7.02.829a6.015 6.015 0 1 0 0 12.03zm150.274 0c2.691 0 5.315-.28 7.871-.754-2 4.343-6.354 7.38-11.424 7.38-6.95 0-12.604-5.677-12.604-12.655 0-6.95 5.653-12.608 12.604-12.608 4.431 0 8.319 2.311 10.568 5.779-2.258.524-4.6.828-7.015.828a6.015 6.015 0 1 0 0 12.03zm150.268 0c2.693 0 5.319-.28 7.876-.754-2 4.343-6.354 7.38-11.424 7.38-6.95 0-12.608-5.677-12.608-12.655 0-6.95 5.658-12.608 12.608-12.608 4.43 0 8.318 2.31 10.567 5.778-2.26.524-4.602.829-7.019.829a6.015 6.015 0 1 0 0 12.03zm62.985 359.272H42.746c-11.767 0-21.34-9.573-21.34-21.34V173.641h469.189v277.691c-.001 11.767-9.573 21.34-21.341 21.34z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                            <path
+                                                d="M285.429 205.357h-58.86c-8.13 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.617 14.747 14.747 14.747h58.86c8.13 0 14.747-6.617 14.747-14.747v-37.031c-.001-8.13-6.617-14.747-14.747-14.747zm2.716 51.778a2.717 2.717 0 0 1-2.716 2.716h-58.86a2.717 2.717 0 0 1-2.716-2.716v-37.031a2.717 2.717 0 0 1 2.716-2.716h58.86a2.717 2.717 0 0 1 2.716 2.716zM406.33 205.357h-58.864c-8.13 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.617 14.747 14.747 14.747h58.864c8.13 0 14.742-6.617 14.742-14.747v-37.031c0-8.13-6.612-14.747-14.742-14.747zm2.711 51.778a2.716 2.716 0 0 1-2.712 2.716h-58.864a2.717 2.717 0 0 1-2.716-2.716v-37.031a2.717 2.717 0 0 1 2.716-2.716h58.864a2.717 2.717 0 0 1 2.712 2.716zM164.532 290.58H105.67c-8.132 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.614 14.747 14.747 14.747h58.862c8.13 0 14.747-6.617 14.747-14.747v-37.031c0-8.13-6.617-14.747-14.747-14.747zm2.717 51.778a2.717 2.717 0 0 1-2.716 2.716H105.67a2.719 2.719 0 0 1-2.716-2.716v-37.031a2.719 2.719 0 0 1 2.716-2.716h58.862a2.717 2.717 0 0 1 2.716 2.716v37.031zM285.429 290.58h-58.86c-8.13 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.617 14.747 14.747 14.747h58.86c8.13 0 14.747-6.617 14.747-14.747v-37.031c-.001-8.13-6.617-14.747-14.747-14.747zm2.716 51.778a2.717 2.717 0 0 1-2.716 2.716h-58.86a2.717 2.717 0 0 1-2.716-2.716v-37.031a2.717 2.717 0 0 1 2.716-2.716h58.86a2.717 2.717 0 0 1 2.716 2.716zM406.33 290.58h-58.864c-8.13 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.617 14.747 14.747 14.747h58.864c8.13 0 14.742-6.617 14.742-14.747v-37.031c0-8.13-6.612-14.747-14.742-14.747zm2.711 51.778a2.716 2.716 0 0 1-2.712 2.716h-58.864a2.717 2.717 0 0 1-2.716-2.716v-37.031a2.717 2.717 0 0 1 2.716-2.716h58.864a2.717 2.717 0 0 1 2.712 2.716zM164.532 375.804H105.67c-8.132 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.614 14.747 14.747 14.747h58.862c8.13 0 14.747-6.617 14.747-14.747V390.55c0-8.13-6.617-14.746-14.747-14.746zm2.717 51.777a2.717 2.717 0 0 1-2.716 2.716H105.67a2.719 2.719 0 0 1-2.716-2.716V390.55a2.719 2.719 0 0 1 2.716-2.716h58.862a2.717 2.717 0 0 1 2.716 2.716v37.031zM285.429 375.804h-58.86c-8.13 0-14.747 6.617-14.747 14.747v37.031c0 8.13 6.617 14.747 14.747 14.747h58.86c8.13 0 14.747-6.617 14.747-14.747V390.55c-.001-8.13-6.617-14.746-14.747-14.746zm2.716 51.777a2.717 2.717 0 0 1-2.716 2.716h-58.86a2.717 2.717 0 0 1-2.716-2.716V390.55a2.717 2.717 0 0 1 2.716-2.716h58.86a2.717 2.717 0 0 1 2.716 2.716z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    Lịch trình hoạt động dự kiến <span id="js-event-total"></span>
+                                </div>
+                                <div class="event-list row gx-3 gy-3" id="js-event-list">
+                                    <!-- js -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="news">
+                <div class="container section">
+                    <div class="section-heading special-text">Tin tức & thông báo</div>
+
+                    <div class="news-wrap" data-aos="fade-up">
+                        <div class="row gy-4 gy-lg-0">
+                            <div class="col-12 col-lg-8 overflow-hidden position-relative">
+                                <div class="next-btn display-on-mobile">
+                                    <svg viewBox="0 0 100 100" class="">
+                                        <g>
+                                            <switch>
+                                                <g>
+                                                    <path
+                                                        d="M34.5 83c-.5 0-1-.2-1.4-.6-.8-.8-.8-2 0-2.8L62.7 50 33.1 20.4c-.8-.8-.8-2 0-2.8s2-.8 2.8 0l31 31c.8.8.8 2 0 2.8l-31 31c-.4.4-.9.6-1.4.6z"
+                                                        fill="#000000" opacity="1" data-original="#000000" class="">
+                                                    </path>
+                                                </g>
+                                            </switch>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="prev-btn display-on-mobile">
+                                    <svg viewBox="0 0 24 24" class="">
+                                        <g>
+                                            <path fill="#000000" fill-rule="evenodd"
+                                                d="M8.146 12.353a.5.5 0 0 1 0-.707l7-7a.5.5 0 1 1 .707.708L9.207 12l6.646 6.647a.5.5 0 1 1-.707.707z"
+                                                clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="row news-item-wrap">
+                                    <div class="col-12 col-md-6">
+                                        <div class="news-item">
+                                            <div class="news-item__img"
+                                                style="background-image: url(assets/images/LandingPage.jpg);"></div>
+                                            <div class="news-item-overlay">
+                                                <div class="news-item-box">
+                                                    <a href="https://www.facebook.com/share/p/1GR8Hq8sJT/"
+                                                        target="_blank" class="news-item__link">Bảng Landing Page - Cuộc
+                                                        thi
+                                                        thiết kế “Chào mừng 30 năm thành lập khoa Công nghệ thông tin”
+                                                        chính thức diễn ra.
+                                                        Bảng Landing Page - Cuộc thi thiết kế “Chào mừng 30 năm thành
+                                                        lập khoa Công nghệ thông tin” chính thức diễn ra.
+
+
+                                                    </a>
+                                                    <p class="news-item__date">04/11/2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="news-item">
+                                            <div class="news-item__img"
+                                                style="background-image: url(assets/images/CuocThiPoster.jpg);"></div>
+                                            <div class="news-item-overlay">
+                                                <div class="news-item-box">
+                                                    <a href="https://www.facebook.com/share/p/14hqxxN1Gz/"
+                                                        target="_blank" class="news-item__link">Bảng Poster - Cuộc thi
+                                                        thiết kế
+                                                        “Chào mừng 30 năm thành lập khoa Công nghệ thông tin” mở đăng
+                                                        ký.
+                                                    </a>
+                                                    <p class="news-item__date">10/11/2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <!-- 3 news -->
+                                <ul class="news-list">
+                                    <li class="news-list-item">
+                                        <a href="https://www.facebook.com/share/p/15g3cfb7en/" target="_blank"
+                                            class="news-list-link">
+                                            <img src="assets/images/news1.jpg" alt="" class="news-list-item__img">
+                                            <div>
+                                                <h2 class="news-list-link__heading">Tham gia ngay “Chương trình đào tạo
+                                                    Kỹ sư cầu nối Nhật Bản và Hàn Quốc”.
+                                                </h2>
+                                                <p class="news-list-item__date">20/11/2024</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list-item">
+                                        <a href="https://www.facebook.com/share/p/1DSqYik8h2/" target="_blank"
+                                            class="news-list-link">
+                                            <img src="assets/images/traoDoiKienThucNCKH.jpg" alt=""
+                                                class="news-list-item__img">
+                                            <div>
+                                                <h2 class="news-list-link__heading">
+                                                    Buổi trao đổi kiến thức “Lộ trình tham gia nghiên cứu khoa học cho
+                                                    người mới bắt đầu”.
+                                                </h2>
+                                                <p class="news-list-item__date">19/11/2024</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list-item">
+                                        <a href="https://www.facebook.com/share/p/14hqxxN1Gz/" target="_blank"
+                                            class="news-list-link">
+                                            <img src="assets/images/CuocThiPoster.jpg" alt=""
+                                                class="news-list-item__img">
+                                            <div>
+                                                <h2 class="news-list-link__heading">
+                                                    Bảng Poster - Cuộc thi thiết kế “Chào mừng 30 năm thành lập khoa
+                                                    Công nghệ thông tin” mở đăng ký.
+                                                </h2>
+                                                <p class="news-list-item__date">10/11/2024</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary news-view-more">Xem tất cả</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="newsletter">
+                <div class="container section">
+                    <div class="row newsletter-signup justify-content-center align-items-center">
+                        <div class="section-heading white-text">Đăng ký</div>
+                        <div class="section-subtitle gray-text">Để cập nhật những tin tức và thông báo mới nhất
+                        </div>
+
+                        <div class="col-12 col-lg-8">
+                            <div class="input-wrap d-flex justify-content-center align-items-center">
+                                <input type="email" id="email" class="input subscribe-input flex-grow-1"
+                                    placeholder="Nhập địa chỉ email của bạn">
+                                <button class="btn btn-primary--reverse subscribe-button">Đăng
+                                    ký</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="assets/images/Logo_Full_1_Resize.png" alt="" class="footer-logo__img">
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 footer-section">
+                        <div class="footer-heading">Theo dõi chúng tôi trên</div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="https://www.facebook.com/ithusc" class="footer-link" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        class="footer-link__img">
+                                        <g>
+                                            <path fill-rule="evenodd"
+                                                d="M255.182 7.758q69.23.79 125.086 34.03a249.734 249.734 0 0 1 88.89 89.434q33.037 56.191 33.825 125.843-1.962 95.3-60.117 162.79c-38.77 44.995-88.425 72.83-139.827 83.501V325.23h48.597l10.99-70h-73.587v-45.848a39.844 39.844 0 0 1 8.474-26.323q8.827-11.253 31.09-11.829h44.436v-61.318q-.957-.308-18.15-2.434a360.743 360.743 0 0 0-39.16-2.434q-44.433.205-70.281 25.068-25.85 24.855-26.409 71.92v53.198h-56v70h56v178.127c-63.115-10.67-112.77-38.506-151.54-83.5S8.691 320.598 7.383 257.065q.785-69.655 33.824-125.843a249.739 249.739 0 0 1 88.891-89.435q55.854-33.233 125.084-34.03z"
+                                                fill="#0075a1" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <span>Fanpage</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://it.husc.edu.vn" class="footer-link">
+                                    <svg viewBox="0 0 32 32" class="footer-link__img">
+                                        <g>
+                                            <path
+                                                d="M25.693 5.9a13.865 13.865 0 0 0-7.496-3.726c-.68-.116-1.377-.17-2.19-.173L16 2H15.97c-.757 0-1.486.059-2.155.172a13.868 13.868 0 0 0-7.504 3.724c-.43.409-.846.864-1.23 1.348C3.064 9.754 2 12.781 2 16s1.065 6.246 3.077 8.752c2.14 2.688 5.332 4.562 8.73 5.072.595.106 1.24.165 1.917.176h.017a1 1 0 0 0 .015-2c-.442-.007-.86-.045-1.266-.101a17.571 17.571 0 0 1-2.498-3.542 16.174 16.174 0 0 1 3.289-.488c.552-.022.98-.488.958-1.04s-.493-.99-1.04-.958a18.307 18.307 0 0 0-4.068.646c-.077-.191-.168-.372-.24-.568a2.044 2.044 0 0 1-.092-.26A17.736 17.736 0 0 1 9.91 17H16a1 1 0 0 0 1-1.001v-5.885c1.299-.071 2.584-.28 3.842-.623.108.29.222.594.327.89.363 1.093.618 2.248.758 3.435a1 1 0 0 0 1.986-.234 19.41 19.41 0 0 0-.864-3.885c-.09-.28-.21-.557-.307-.83a17.259 17.259 0 0 0 2.087-.993c.182.197.36.404.531.621A11.848 11.848 0 0 1 27.958 15H26.22a1 1 0 1 0 0 2h1.733c-.02.234-.041.47-.074.717a1 1 0 0 0 1.982.265c.094-.699.139-1.347.139-1.982a13.84 13.84 0 0 0-3.077-8.752 13.218 13.218 0 0 0-1.23-1.349zm-3.77 1.11a17.22 17.22 0 0 0-.586-1.059c-.19-.33-.395-.656-.608-.977.891.381 1.731.872 2.508 1.463-.426.213-.867.4-1.315.574zM15 4.04v4.07a16.434 16.434 0 0 1-3.009-.47 17.41 17.41 0 0 1 2.487-3.536c.172-.022.34-.049.522-.064zm-4.939 2.963c-.437-.17-.87-.355-1.296-.568a11.83 11.83 0 0 1 2.501-1.458 19.38 19.38 0 0 0-1.205 2.026zm.737 3.334c.078-.293.225-.565.338-.854 1.271.347 2.565.56 3.864.63V15H9.91c.09-1.58.38-3.144.888-4.663zM6.643 8.492c.174-.22.368-.405.554-.607.663.367 1.342.692 2.036.968-.12.301-.263.558-.344.886A19.826 19.826 0 0 0 7.911 15H4.04a11.855 11.855 0 0 1 2.602-6.508zm4.628 18.531c-.888-.38-1.725-.87-2.5-1.46.42-.21.85-.394 1.29-.567.36.701.767 1.375 1.21 2.027zm-2.38-4.725c.106.336.22.573.348.876a17.96 17.96 0 0 0-2.045.97A11.848 11.848 0 0 1 4.041 17h3.87c.09 1.809.408 3.588.98 5.297zM17 4.043c.175.014.346.04.517.062.8.895 1.512 1.846 2.1 2.866.137.225.251.451.373.676-.981.245-1.981.404-2.99.464z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                            <path
+                                                d="m28.547 21.296-7.06-4.943a1.753 1.753 0 0 0-1.76-.154c-.578.27-.956.81-1.013 1.447l-.75 8.585a1.741 1.741 0 0 0 1.06 1.777c.71.304 1.505.13 2.02-.45l.5-.563.926 1.985a1.768 1.768 0 0 0 2.347.854l2.084-.972c.428-.199.752-.552.913-.996.162-.443.141-.923-.058-1.351l-.926-1.985.753-.02a1.742 1.742 0 0 0 1.643-1.258 1.744 1.744 0 0 0-.68-1.956zm-6.596 2.907a1.003 1.003 0 0 0-.892.325l-1.042 1.174.654-7.48 6.15 4.307-1.568.043a1 1 0 0 0-.879 1.423l1.47 3.153-1.66.775-1.471-3.153a.998.998 0 0 0-.762-.567z"
+                                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <span>Website</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 footer-section">
+                        <div class="footer-heading">Liên hệ</div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <span class="footer-text">
+                                    <img src="assets/images/building-icon.png" alt="" class="footer-link__img">
+                                    <span>Tầng 2 Nhà G, 77 Nguyễn Huệ, TP. Huế</span>
+                                </span>
+                            </li>
+                            <li class="footer-item">
+                                <a href="tel:02343826767" class="footer-link" target="_blank">
+                                    <svg viewBox="0 0 51.413 51.413" class="footer-link__img">
+                                        <g>
+                                            <path
+                                                d="M25.989 12.274c8.663.085 14.09-.454 14.823 9.148h10.564c0-14.875-12.973-16.88-25.662-16.88-12.69 0-25.662 2.005-25.662 16.88h10.482c.811-9.785 6.864-9.232 15.455-9.148zM5.291 26.204c2.573 0 4.714.154 5.19-2.377.064-.344.101-.734.101-1.185H0c0 3.765 2.369 3.562 5.291 3.562zM40.88 22.642h-.099c0 .454.039.845.112 1.185.502 2.334 2.64 2.189 5.204 2.189 2.936 0 5.316.193 5.316-3.374H40.88z"
+                                                fill="#010002" data-original="#010002"></path>
+                                            <path
+                                                d="M35.719 20.078v-1.496c0-.669-.771-.711-1.723-.711h-1.555c-.951 0-1.722.042-1.722.711V20.871h-11V18.582c0-.669-.771-.711-1.722-.711h-1.556c-.951 0-1.722.042-1.722.711v2.802C12.213 23.988 4.013 35.073 3.715 36.415l.004 8.955c0 .827.673 1.5 1.5 1.5h40c.827 0 1.5-.673 1.5-1.5v-9c-.295-1.303-8.493-12.383-11-14.987v-1.305zM19.177 37.62a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm0-5a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm0-4.999a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm6 9.999a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm0-5a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm0-4.999a1.458 1.458 0 1 1 0-2.915 1.458 1.458 0 0 1 0 2.915zm6 9.999a1.457 1.457 0 1 1 0-2.916 1.457 1.457 0 1 1 0 2.916zm0-5a1.457 1.457 0 1 1 0-2.916 1.457 1.457 0 1 1 0 2.916zm0-4.999a1.457 1.457 0 1 1 0-2.916 1.458 1.458 0 1 1 0 2.916z"
+                                                fill="#010002" data-original="#010002"></path>
+                                        </g>
+                                    </svg>
+                                    <span>0234 382 6767</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="mailto:khoacntt@husc.edu.vn" class="footer-link" target="_blank">
+                                    <svg viewBox="0 0 512 512" class="footer-link__img">
+                                        <g>
+                                            <path
+                                                d="M485.743 85.333H26.257C11.815 85.333 0 97.148 0 111.589V400.41c0 14.44 11.815 26.257 26.257 26.257h459.487c14.44 0 26.257-11.815 26.257-26.257V111.589c-.001-14.441-11.816-26.256-26.258-26.256zm-9.853 19.691L271.104 258.626c-3.682 2.802-9.334 4.555-15.105 4.529-5.77.026-11.421-1.727-15.104-4.529L36.109 105.024H475.89zM366.5 268.761l111.59 137.847c.112.138.249.243.368.368H33.542c.118-.131.256-.23.368-.368L145.5 268.761a9.846 9.846 0 0 0-1.464-13.851c-4.227-3.419-10.424-2.771-13.844 1.457l-110.5 136.501V117.332l209.394 157.046c7.871 5.862 17.447 8.442 26.912 8.468 9.452-.02 19.036-2.6 26.912-8.468l209.394-157.046v275.534L381.807 256.367c-3.42-4.227-9.623-4.877-13.844-1.457-4.234 3.419-4.884 9.624-1.463 13.851z"
+                                                fill="#000000" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg>
+                                    <span>khoacntt@husc.edu.vn</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 footer-section">
+                        <div class="footer-heading">Đăng ký nhận bản tin</div>
+                        <div class="footer-newsletter">
+                            <input type="text" name="" id="" placeholder="Nhập email của bạn *"
+                                class="footer-newsletter__input">
+                            <div>
+                                <button class="btn btn--small btn-primary footer-newsletter">Đăng
+                                    ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p class="text-center">Copyright © 2024 Nguyễn Ngọc Huy Hoàng.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/javascript/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script src="assets/javascript/javascript.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
