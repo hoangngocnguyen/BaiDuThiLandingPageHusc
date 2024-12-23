@@ -34,7 +34,7 @@ const eventList = [
     title: "Cuộc thi thiết kế chào mừng 30 năm thành lập Khoa",
     imageUrl: "./assets/images/LandingPage.jpg",
     startDate: new Date(2024, 10),
-    isEnded: false,
+    isEnded: true,
     isLongEvent: true,
     location: "Khoa Công nghệ thông tin, tầng 2 nhà C, trường ĐH Khoa học",
     detail: "https://www.facebook.com/share/p/1GGegmp9xZ/",
