@@ -25,7 +25,7 @@ const eventList = [
     title: "Giải bóng đá sinh viên IT CUP 2025",
     imageUrl: "./assets/images/IT_CUP.jpg",
     startDate: new Date(2025, 2),
-    isEnded: false,
+    isEnded: true,
     isLongEvent: true,
     location: "Sân cỏ nhân tạo trường ĐH Luật, ĐH Huế",
   },
